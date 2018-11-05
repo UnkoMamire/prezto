@@ -17,8 +17,16 @@ fi
 # Editors
 #
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+if type nvim; then
+	export EDITOR='nvim'
+	export VISUAL='nvim'
+elif type vim; then
+	export EDITOR='vim'
+	export VISUAL='vim'
+elif type vi; then
+	export EDITOR='vi'
+	export VISUAL='vi'
+fi
 export PAGER='less'
 
 #
