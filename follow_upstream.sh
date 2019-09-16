@@ -9,3 +9,5 @@ fi
 
 git fetch upstream
 git merge upstream/master
+
+git submodule update --init --recursive
